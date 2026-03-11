@@ -117,7 +117,6 @@ public class Server implements LCMCalculator, AsyncLCMCalculator {
             System.out.println("   - Синхронный:   LCMCalculator");
             System.out.println("   - Асинхронный:  AsyncLCMCalculator");
             System.out.println("\nОжидание подключений клиентов...");
-            System.out.println("   (Для остановки нажмите Ctrl+C)\n");
 
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
                 if (finalServer != null) {
