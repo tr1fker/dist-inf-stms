@@ -1,0 +1,8 @@
+services:
+  glassfish:
+    build: .
+    image: mini-poll-app:glassfish7
+    container_name: mini-poll-app
+    ports:
+      - "8080:8080"   # HTTP (app: http://localhost:8080/api/poll/...)
+      - "4848:4848"   # Admin Console
